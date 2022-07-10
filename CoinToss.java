@@ -1,11 +1,14 @@
 import java.util.Random;
+import java.util.Scanner;
 class CoinToss{
     public static void main(String args[]) {
         Random rand = new Random();
-       
+        Scanner sc = new Scanner(System.in);
         int count1=0;
         int count2=0;
-        
+        System.out.println("Who are you?");
+        String name = sc.next();
+        System.out.println("Hello, "+name+"!");
         System.out.println("Tossing a coin...");
         for(int i=0;i<3;i++) {
             if(rand.nextInt(2)==0) {
